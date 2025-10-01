@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 15 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="exercice">
+
+            <h1>Task – Notes, Emails & Todos</h1>
+            <form id="myForm">
+                <input type="text" id="textInput" placeholder="Enter text" required>
+                <input type="text" id="tagInput" placeholder="Enter tags ( , to separate)">
+                <select id="typeSelect">
+                    <option value="note">note</option>
+                    <option value="email">email</option>
+                    <option value="todo">todo</option>
+                </select>
+                <button type="submit">Add</button>
+            </form>
+
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Search text...">
+                <input type="text" id="tagSearchInput" placeholder="Search tags ( , to separate)">
+                <select id="searchSelect">
+                    <option value="all">all</option>
+                    <option value="note">note</option>
+                    <option value="email">email</option>
+                    <option value="todo">todo</option>
+                </select>
+                <button type="submit">Search</button>
+                <button type="button" id="resetBtn">Reset</button>
+            </form>
+
+            <ul id="list"></ul>
+        </div>
+        <nav>
+            <a href="../task14/index.html" class="btn prev">
+                &larr; Previous Task
+
+            </a>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

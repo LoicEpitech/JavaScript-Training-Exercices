@@ -1,0 +1,157 @@
+/* --- Reset et base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* --- Exercice container --- */
+.exercice {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* --- Forms --- */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+select {
+  flex: 1 1 200px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* --- List --- */
+ul#list {
+  list-style: none;
+}
+
+ul#list li {
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+ul#list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Tag styles --- */
+.tag {
+  display: inline-block;
+  background-color: #eee;
+  color: #555;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 5px;
+  font-size: 0.8rem;
+}
+
+/* --- Types colors --- */
+.note {
+  border-left: 6px solid #ffc107;
+  background-color: #fff8e1;
+}
+
+.email {
+  border-left: 6px solid #28a745;
+  background-color: #e6ffed;
+}
+
+.todo {
+  border-left: 6px solid #dc3545;
+  background-color: #ffe6e6;
+}
+
+/* --- Navigation --- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+nav a.btn {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  background-color: #6c757d;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+nav a.btn:hover {
+  background-color: #495057;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
